@@ -20,15 +20,24 @@ h1 {
   line-height: 1.5;
   color: #ffcec4;
 }
+.form-container {
+  background-color: #f5e6e6;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
 
 form {
-  padding: 30px;
-  background-color: #f5e6e6;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 8px;
   display: flex;
-  margin: 80px;
 }
+.hint {
+  line-height: 1.5;
+  margin-top: 10px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
 .instructions {
   padding: 16px;
   border: 1px, solid rgba(39, 33, 66, 0.5);
@@ -36,7 +45,6 @@ form {
   font-size: 15px;
   border-radius: 50px;
   line-height: 20px;
-  color: #ffcec4;
 }
 .submit-button {
   margin-left: 10px;
@@ -58,9 +66,24 @@ form {
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 8px;
 }
-
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
